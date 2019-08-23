@@ -1,4 +1,22 @@
 @-moz-document domain("ecosia.org") {
+    /* Home page ecosia.org */
+    html, body {
+        background-color: #333333;
+        color: white;
+        z-index: -5;
+    }
+    .content[data-v-29c6b17e] {
+        background: linear-gradient(#333,#333 90%,hsla(0,0%,100%,0)) bottom no-repeat;
+    }
+    .card {
+        background-color: #222;
+    }
+    footer, .index-footer, .index-footer[data-v-d2e78d56] {
+        background-color: #222;
+    }
+
+
+    /* Searches */
     .search-section {
         background-color: #333333;
     }
@@ -70,7 +88,7 @@
         box-shadow: none;
         border: 1px solid #9696964d !important;
     }
-    .thumbnail-video {
+    .thumbnail-item, .thumbnail-video {
         background-color: #292929;
         -webkit-box-shadow: unset;
         -moz-box-shadow: unset;
@@ -122,7 +140,7 @@
         padding: 0.3em;
         border: none;
     }
-    .search-header, .row, .navbar-row, .small-footer, .results-page, .result-wrapper, .body-settings, .popover-section {
+    .search-header, .results-wrapper, .row, .navbar-row, .small-footer, .results-page, .result-wrapper, .body-settings, .popover-section {
         background-color: #333333;
     }
     .js-search-input, .input-wrapper, .input, .search-form-button, .search-form-wrapper, .buttons-wrapper {
