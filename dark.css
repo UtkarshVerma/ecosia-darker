@@ -64,6 +64,9 @@
     .filter-list {
         background-color: #292929;
     }
+    .notifications-banner {
+        background-color: #292929;
+    }
     .flags-dropdown-body, .flags-dropdown .pill:after, .notifications-item {
         background-color: #292929;
         border: none !important;
