@@ -1,17 +1,17 @@
 @-moz-document domain("ecosia.org") {
-    /* Home page ecosia.org */
+/* Home page ecosia.org */
     html, body {
         background-color: #333333;
         color: white;
         z-index: -5;
     }
-    .content[data-v-29c6b17e] {
+    .search-section.section.hero .content {
         background: linear-gradient(#333,#333 90%,hsla(0,0%,100%,0)) bottom no-repeat;
     }
     .card {
         background-color: #222;
     }
-    footer, .index-footer, .index-footer[data-v-d2e78d56] {
+    footer, #__layout .index-footer, .index-footer[data-v-d2e78d56] {
         background-color: #222;
     }
 
