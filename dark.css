@@ -1,4 +1,3 @@
-@-moz-document domain("ecosia.org") {
 /* Home page ecosia.org */
     html, body {
         background-color: #333333;
@@ -11,7 +10,7 @@
     .card {
         background-color: #222;
     }
-    footer, #__layout .index-footer, .index-footer[data-v-d2e78d56] {
+    footer, #__layout .index-footer, body .index-footer {
         background-color: #222;
     }
 
@@ -64,7 +63,8 @@
     .filter-list {
         background-color: #292929;
     }
-    .notifications-banner {
+    .notifications-banner, #__layout .notifications-banner, body .notifications-banner,
+    .banner, #__layout .banner, body .banner {
         background-color: #292929;
     }
     .flags-dropdown-body, .flags-dropdown .pill:after, .notifications-item {
@@ -146,7 +146,7 @@
     .search-header, .results-wrapper, .row, .navbar-row, .small-footer, .results-page, .result-wrapper, .body-settings, .popover-section {
         background-color: #333333;
     }
-    .js-search-input, .input-wrapper, .input, .search-form-field, .search-form-button, .search-form-wrapper, .buttons-wrapper, .main-popup[data-v-6ed53b22] {
+    .js-search-input, .input-wrapper, .input, .search-form-field, .search-form-button, .search-form-wrapper, .buttons-wrapper, #__layout div.main-popup, body div.main-popup {
         background-color: #292929;
         color: #e6e6e6 !important;
     }
@@ -248,4 +248,3 @@
     .tag:hover a {
         color: #c2c2b4 !important;
     }
-}
