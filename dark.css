@@ -14,6 +14,23 @@
         background-color: #222;
     }
 
+    /* Info ecosia.org */
+    .search-header.search-header-inversed, .search-header.search-header-show, 
+    .site-footer, .site-footer:before {
+        background-color: #333333;
+    }
+    .statistics {
+        background-color: #333333;
+    }
+    .statistics-history .statistics-value-highlight {
+        color: white;
+    }
+    .statistics-value-description {
+        color: #c2c2c2;
+    }
+    .jobs {
+        background-color: #292929;
+    }
 
     /* Searches */
     .search-section {
@@ -44,7 +61,7 @@
     .typeahead-suggestion:hover, .suggestion-item:hover, .suggestion-item.selected {
         background-color: #434343 !important;
     }
-    .dropdown-menu, .dropdown.dropdown-right {
+    .popover, .dropdown-menu, .dropdown.dropdown-right {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
@@ -53,6 +70,35 @@
         border-style: solid;
         border-width: 0 1px 0 1px;
         border-color: #9696964d;
+    }
+    .pill:after, .dropdown.dropdown-arrow:after {
+        border-bottom-color: #9696964d;
+    }
+    .popover-learnmore-footer {
+        border-color: #9696964d;
+    }
+    .dropdown.dropdown-arrow.personal-counter-dropdown {
+        background-color: #292929;
+        border-color: #9696964d;
+    }
+    .personal-counter-content-actions[data-v-3dc2c034] {
+        border-color: #9696964d;
+    }
+    .item.notification {
+        border-color: #9696964d;
+    }
+    .item .link {
+        background-color: #292929;
+    }
+    .item .link:active, .item .link:active, .item .link:focus, .item .link:hover {
+        background-color: #242424;
+    }
+    .notifications .link-more.more {
+        border-color: #9696964d;
+        background-color: #4b4b4b;
+    }
+    .notifications .link-more:active, .notifications .link-more:focus, .notifications .link-more:hover, .notifications .link-more:visited {
+        color: #c2c2c2;
     }
 
 
@@ -105,6 +151,11 @@
     .thumbnail-publisher, .result-url {
         color: #9e9e9e !important;
     }
+
+    #__layout .image, body .image {
+        background-color: #292929;
+    }
+
     .result-url {
         padding-bottom: 1rem;
     }
