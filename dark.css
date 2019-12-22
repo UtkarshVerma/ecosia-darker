@@ -11,29 +11,29 @@
     .card {
         background-color: #222;
     }
-    footer, #__layout .index-footer, body .index-footer {
+    .card-productads {
+        background-color: #333333;
+    }
+    @media only screen and (max-width: 991px) {
+        .card-mobile {
+            background-color: #292929;
+        }
+    }
+    footer, #__layout .index-footer, .index-footer[data-v-d2e78d56] {
         background-color: #222;
     }
 
-    /* Info ecosia.org */
-    .search-header.search-header-inversed, .search-header.search-header-show, 
-    .site-footer, .site-footer:before {
-        background-color: #333333;
-    }
-    .statistics {
-        background-color: #333333;
-    }
-    .statistics-history .statistics-value-highlight {
-        color: white;
-    }
-    .statistics-value-description {
-        color: #c2c2c2;
-    }
-    .jobs {
-        background-color: #292929;
-    }
 
     /* Searches */
+    .search-header .entity-header-more, .search-header .pill {
+        border-color: #9696964d;
+    }
+    .search-header .entity-header-more:hover, .search-header .pill:hover {
+        background-color: #292929!important;
+    }
+    .search-form-addon-button {
+        background-color: #292929;
+    }
     .search-section {
         background-color: #333333;
     }
@@ -62,7 +62,6 @@
     .typeahead-suggestion:hover, .suggestion-item:hover, .suggestion-item.selected {
         background-color: #434343 !important;
     }
-    .popover,
     .dropdown-menu, .dropdown.dropdown-right {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -73,34 +72,8 @@
         border-width: 0 1px 0 1px;
         border-color: #9696964d;
     }
-    .pill:after, .dropdown.dropdown-arrow:after {
-        border-bottom-color: #9696964d;
-    }
-    .popover-learnmore-footer {
-        border-color: #9696964d;
-    }
-    .dropdown.dropdown-arrow.personal-counter-dropdown {
+    .offcanvas-menu-header {
         background-color: #292929;
-        border-color: #9696964d;
-    }
-    .personal-counter-content-actions[data-v-3dc2c034] {
-        border-color: #9696964d;
-    }
-    .item.notification {
-        border-color: #9696964d;
-    }
-    .item .link {
-        background-color: #292929;
-    }
-    .item .link:active, .item .link:active, .item .link:focus, .item .link:hover {
-        background-color: #242424;
-    }
-    .notifications .link-more.more {
-        border-color: #9696964d;
-        background-color: #4b4b4b;
-    }
-    .notifications .link-more:active, .notifications .link-more:focus, .notifications .link-more:hover, .notifications .link-more:visited {
-        color: #c2c2c2;
     }
 
 
@@ -111,15 +84,14 @@
     .filter-list {
         background-color: #292929;
     }
-    .notifications-banner, #__layout .notifications-banner, body .notifications-banner,
-    .banner, #__layout .banner, body .banner {
+    .notifications-banner, .popover {
         background-color: #292929;
     }
     .flags-dropdown-body, .flags-dropdown .pill:after, .notifications-item {
         background-color: #292929;
         border: none !important;
     }
-    .flags-dropdown-header, .flags-dropdown-more, .flags-dropdown-chosen, .flags-dropdown-arrow, .notifications-center-more {
+    .flags-dropdown-header, .flags-dropdown-more, .flags-dropdown-chosen, .flags-dropdown-arrow, .notifications-center-more, .popover-learnmore-footer {
         color: #c2c2c2 !important;
         background-color: #424242;
         border-color: #9696964d !important;
@@ -139,8 +111,7 @@
         box-shadow: none;
         border: 1px solid #9696964d !important;
     }
-    .thumbnail-item,
-    .thumbnail-video {
+    .thumbnail-item, .thumbnail-video {
         background-color: #292929;
         -webkit-box-shadow: unset;
         -moz-box-shadow: unset;
@@ -154,11 +125,6 @@
     .thumbnail-publisher, .result-url {
         color: #9e9e9e !important;
     }
-
-    #__layout .image, body .image {
-        background-color: #292929;
-    }
-
     .result-url {
         padding-bottom: 1rem;
     }
@@ -197,12 +163,13 @@
         padding: 0.3em;
         border: none;
     }
-    .search-header, .results-wrapper, .row, .navbar-row, .small-footer, .results-page, .result-wrapper, .body-settings, .popover-section {
+    .search-header, .results-wrapper, .row, .navbar-row, .small-footer, .results-page, .result-wrapper, .body-settings {
         background-color: #333333;
     }
-    .js-search-input, .input-wrapper, .input, .search-form-field, .search-form-button, .search-form-wrapper, .buttons-wrapper, #__layout div.main-popup, body div.main-popup {
+    .js-search-input, .input-wrapper, .input, .search-form-field, .search-form-button, .search-form-wrapper, .buttons-wrapper, .main-popup[data-v-6ed53b22] {
         background-color: #292929;
         color: #e6e6e6 !important;
+        border-color: #9696964d;
     }
     .buttons-wrapper {
         padding-right: 0;
@@ -233,7 +200,7 @@
     .search-form-submit path, .button-submit path, .logo-anchor g path:nth-child(2) {
         fill: white !important;
     }
-    .section-title-pill, .pill, .pill-inversed, .pill:hover, .pill-inversed:hover, .pagination-button:hover svg, .notifications-item, .notifications-centre-toggle {
+    .section-title-pill, .pill, .pill-inversed, .pagination-button:hover svg, .notifications-item, .notifications-centre-toggle, .popover-section {
         background-color: #4b4b4b !important;
         border: none;
     }
@@ -257,12 +224,6 @@
     }
     .search-header-dropdown path, .icon-button:not(.scroll-down):not(.button-clear) path, .notifications-center-toggle path, .filter-button path {
         fill: #b6b6b6;
-    }
-    .search-header-dropdown:hover, .icon-button:not(.scroll-down):not(.button-clear):not(.button-submit):hover {
-        background-color: #cecece !important;
-    }
-    .search-header-dropdown:hover path, .icon-button:not(.scroll-down):not(.button-clear):hover path{
-        fill: #242424;
     }
     .navbar-more.hidden-handheld label path {
         fill: #e6e6e6;
