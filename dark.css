@@ -1,4 +1,39 @@
 @-moz-document domain("ecosia.org") {
+/* Home page ecosia.org */
+    html, body {
+        background-color: #333333;
+        color: white;
+        z-index: -5;
+    }
+    .search-section.section.hero .content {
+        background: linear-gradient(#333,#333 90%,hsla(0,0%,100%,0)) bottom no-repeat;
+    }
+    .card {
+        background-color: #222;
+    }
+    .card-productads {
+        background-color: #333333;
+    }
+    @media only screen and (max-width: 991px) {
+        .card-mobile {
+            background-color: #292929;
+        }
+    }
+    footer, #__layout .index-footer, .index-footer[data-v-d2e78d56] {
+        background-color: #222;
+    }
+
+
+    /* Searches */
+    .search-header .entity-header-more, .search-header .pill {
+        border-color: #9696964d;
+    }
+    .search-header .entity-header-more:hover, .search-header .pill:hover {
+        background-color: #292929!important;
+    }
+    .search-form-addon-button {
+        background-color: #292929;
+    }
     .search-section {
         background-color: #333333;
     }
@@ -37,6 +72,9 @@
         border-width: 0 1px 0 1px;
         border-color: #9696964d;
     }
+    .offcanvas-menu-header {
+        background-color: #292929;
+    }
 
 
     .filter-trigger, .filter-trigger:hover {
@@ -46,11 +84,14 @@
     .filter-list {
         background-color: #292929;
     }
+    .notifications-banner, .popover {
+        background-color: #292929;
+    }
     .flags-dropdown-body, .flags-dropdown .pill:after, .notifications-item {
         background-color: #292929;
         border: none !important;
     }
-    .flags-dropdown-header, .flags-dropdown-more, .flags-dropdown-chosen, .flags-dropdown-arrow, .notifications-center-more {
+    .flags-dropdown-header, .flags-dropdown-more, .flags-dropdown-chosen, .flags-dropdown-arrow, .notifications-center-more, .popover-learnmore-footer {
         color: #c2c2c2 !important;
         background-color: #424242;
         border-color: #9696964d !important;
@@ -70,7 +111,7 @@
         box-shadow: none;
         border: 1px solid #9696964d !important;
     }
-    .thumbnail-video {
+    .thumbnail-item, .thumbnail-video {
         background-color: #292929;
         -webkit-box-shadow: unset;
         -moz-box-shadow: unset;
@@ -122,12 +163,13 @@
         padding: 0.3em;
         border: none;
     }
-    .search-header, .row, .navbar-row, .small-footer, .results-page, .result-wrapper, .body-settings, .popover-section {
+    .search-header, .results-wrapper, .row, .navbar-row, .small-footer, .results-page, .result-wrapper, .body-settings {
         background-color: #333333;
     }
-    .js-search-input, .input-wrapper, .input, .search-form-button, .search-form-wrapper, .buttons-wrapper {
+    .js-search-input, .input-wrapper, .input, .search-form-field, .search-form-button, .search-form-wrapper, .buttons-wrapper, .main-popup[data-v-6ed53b22] {
         background-color: #292929;
         color: #e6e6e6 !important;
+        border-color: #9696964d;
     }
     .buttons-wrapper {
         padding-right: 0;
@@ -158,7 +200,7 @@
     .search-form-submit path, .button-submit path, .logo-anchor g path:nth-child(2) {
         fill: white !important;
     }
-    .section-title-pill, .pill, .pill-inversed, .pill:hover, .pill-inversed:hover, .pagination-button:hover svg, .notifications-item, .notifications-centre-toggle {
+    .section-title-pill, .pill, .pill-inversed, .pagination-button:hover svg, .notifications-item, .notifications-centre-toggle, .popover-section {
         background-color: #4b4b4b !important;
         border: none;
     }
@@ -182,12 +224,6 @@
     }
     .search-header-dropdown path, .icon-button:not(.scroll-down):not(.button-clear) path, .notifications-center-toggle path, .filter-button path {
         fill: #b6b6b6;
-    }
-    .search-header-dropdown:hover, .icon-button:not(.scroll-down):not(.button-clear):not(.button-submit):hover {
-        background-color: #cecece !important;
-    }
-    .search-header-dropdown:hover path, .icon-button:not(.scroll-down):not(.button-clear):hover path{
-        fill: #242424;
     }
     .navbar-more.hidden-handheld label path {
         fill: #e6e6e6;
